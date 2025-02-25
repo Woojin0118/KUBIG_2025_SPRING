@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Form With Animated Search Button</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<form>
+  <div class="fx fx-gap">
+    <div>
+      <input type="text" placeholder="Search" required />
+    </div>
+    <div id="search-icon">
+      <button type="submit">
+        <div id="search-icon-circle"></div>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</form>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const input = document.querySelector("input[type='text']");
+    
+    let resultContainer = document.createElement("div");
+    resultContainer.style.display = "none"; 
+    resultContainer.classList.add("result-box"); 
+    form.appendChild(resultContainer); 
+  
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault(); 
+  
+      const query = input.value.trim();
+      if (!query) return;
+  
+      try {
+        const response = await fetch("http://127.0.0.1:8000/search", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ query: query }),
+        });
+  
+        const data = await response.json();
+  
+        resultContainer.innerHTML = `<p>${data.result}</p>`;
+        resultContainer.style.display = "block"; 
+  
+      } catch (error) {
+        resultContainer.style.color = "red";
+        resultContainer.innerHTML = `<p>오류 발생: ${error.message}</p>`;
+        resultContainer.style.display = "block";
+      }
+    });
+  });
+  </script>
+  
+</body>
+</html>
