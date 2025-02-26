@@ -2,6 +2,7 @@
 
 ## subject 
 [데이콘](https://dacon.io/competitions/official/236439/data) 부동산 허위매물 분류 해커톤: 가짜를 색출하라!
+![Image](https://github.com/user-attachments/assets/05617fb0-0da0-40b4-818d-ce66f2ffe9e8)
 
 ## members
 19기 심서현, 20기 김채원, 21기 김지엽, 21기 엄희문
@@ -33,3 +34,9 @@
 
 ## Results
 - marco F1 score로 성능 계산
+![Image](https://github.com/user-attachments/assets/7140f5f3-aa5c-4cd9-8a63-952f83060f2b)
+
+## Conclusion
+- 사용한 데이터셋과 실제 부동산 데이터의 괴리 존재, 결측치 다수, 데이터 불균형, 소규모의 데이터셋으로 인해 특징 파악이 어렵고 EDA 및 전처리 필요성이 높음
+- Tree 기반 ML 모델이 우세
+- 일반적인 DL 모델은 정형 데이터에서 성능이 낮고 데이터가 적어 높은 성능을 보이기 어렵지만 TabPFN의 경우 높은 성능을 보임
