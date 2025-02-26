@@ -21,12 +21,12 @@
 > - '중개사무소'라는 중요한 변수를 타겟 인코딩하기에는 거래량의 차이가 있는 중개사무소들을 구분하지 못하기에 'laplace smoothing'과 '신뢰등급'을 사용하여 적용
 
 > ### Adapting model
-> ##### Tabular 데이터를 처리하는 다양한 머신러닝 툴들을 적용
+> ##### ML
 > - Random Forest (Optuna)
 > - CatBoost (SMOTE + Optuna)
 > - LGBM (SMOTE + roc-auc 기반 Bayesian Optimization)
 > - XGBoost (Optuna)
-> ##### DL 세션에서 배운 딥러닝의 모델의 개념과 구조도 적용
+> ##### DL
 > - MLP (KNNImputer, Ordinal Encoder 적용, Optuna + Smote + Adnam)
 > - TabNet (Optuna + SMOTE)
 > - TabPFN (SMOTE)
