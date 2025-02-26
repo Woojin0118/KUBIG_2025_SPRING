@@ -1,10 +1,10 @@
 # Team2 🏠중 탐구
 
-## subject 
+## Subject 
 [데이콘](https://dacon.io/competitions/official/236439/data) 부동산 허위매물 분류 해커톤: 가짜를 색출하라!
 ![Image](https://github.com/user-attachments/assets/05617fb0-0da0-40b4-818d-ce66f2ffe9e8)
 
-## members
+## Members
 19기 심서현, 20기 김채원, 21기 김지엽, 21기 엄희문
 
 ## Goal
