@@ -1,8 +1,6 @@
-# ⚡ Team: Watt's the Price?
-
-## 🚗 Project: 전기차 가격 예측 해커톤: 데이터로 EV를 읽다! (데이콘)
-
-## 👥 Members  
+# 🚗 Project: 전기차 가격 예측 해커톤: 데이터로 EV를 읽다! (데이콘)
+https://dacon.io/competitions/official/236424/overview/description
+## ⚡ 팀명: Watt's the Price?
 20기 이정제, 21기 김수환, 21기 윤채영 
 
 ---
