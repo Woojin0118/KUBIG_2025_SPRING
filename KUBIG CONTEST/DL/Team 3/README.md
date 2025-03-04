@@ -18,5 +18,3 @@
 - 2차 해독 : ELECTRA
 - 3차 해독 : 1차 해독 dataset를 KoGemma 7b 로 추론한 데이터 셋과 2차 해독 데이터셋을 기반으로 Seq matcher (글자 수 유지를 위함)
 - 4차 해독 : symspell 활용한 후처리 및 오타교정
-
-## 📂 파일 구조
